@@ -11,18 +11,22 @@ scorer_name2 = "Marco van Basten"
 goal_0 = 32
 goal_1 = 54
 
-scorers = scorer_name1 + " " + \
-    str(goal_0) + ", " + scorer_name2 + " " + str(goal_1)
+scorers = scorer_name1 + " " + str(goal_0) + ", " + scorer_name2 + " " + str(goal_1)
 
 report = f"{scorer_name1} scored in the {str(goal_0)}nd minute\n{scorer_name2} scored in the {str(goal_1)}th minute"
-
 
 # part 2
 
 player = "Ruud Gullit"
+player = "Maurice Christiaan Hoogwerf"
+player = 'Gut von Examplestein'
 
 first_name = player[:player.find(" ")]
 last_name = player[player.find(" ")+1:]
+#Doet eventuele tussenvoegsels wel mee nemen, maar ook doopnamen.
+
+#last_name = player.split(" ")[-1]
+#Doet alleen de achternaam isoleren, maar ziet dus geen tussenvoegsel.
 
 last_name_len = len(last_name)
 
